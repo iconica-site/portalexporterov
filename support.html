@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агентство Международного Сотрудничества</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/inputmask.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header__main">
+            <div class="header__text">Единый государтсвенный портал услуг экспортеров Челябинской области</div>
+            <div class="header__border"></div>
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="x"><img src="img/logo1.png"></a>
+                </div>
+                <div class="header__buttons">
+                    <a href="x">Главная</a>
+                    <a href="#" class="toggle-services">Услуги экспортерам <img src="img/ep_arrow-up.png"></a>
+                    <div class="services-list">
+                        <a href="#">Услуга №1</a>
+                        <a href="#">Услуга №1</a>
+                        <a href="#">Услуга №1</a>
+                        <a href="#">Услуга №1</a>
+                        <a href="#">Услуга №1</a>
+                        <a href="#">Услуга №1</a>
+                        <a href="#">Услуга №1</a>
+                    </div>
+                    <a href="x">Календарь мероприятий</a>
+                    <a href="x">Поддержка</a>
+                    <a href="x">О нас</a>
+                </div>
+                <div class="header__number">8 (800) 000-00-00</div>
+                <div class="header__icons">
+                    <a href="x"><img src="img/search.png"></a>
+                    <a href="x">
+                        <img src="img/user-lk.png">
+                        <img src="img/chevron-down.png">
+                    </a>
+                    <div class="header__button-menu">
+                        <a href="x"><img src="img/menu.png" id="menu-button"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__buttons-mobile">
+                <a href="#" class="toggle-services">Услуги экспортерам</a>
+                <div class="services-list">
+                    <a href="#">Услуга №1</a>
+                    <a href="#">Услуга №1</a>
+                    <a href="#">Услуга №1</a>
+                    <a href="#">Услуга №1</a>
+                    <a href="#">Услуга №1</a>
+                    <a href="#">Услуга №1</a>
+                    <a href="#">Услуга №1</a>
+                </div>
+                <a href="x">Календарь мероприятий</a>
+                <a href="x">Поддержка</a>
+                <a href="x">О нас</a>
+                <div class="header__number">8 (800) 000-00-00</div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="block__page-uslug">
+            <div class="page-uslug-main">
+                <div class="page-uslug-navigation">
+                    <a href="">главная <img src="img/Background.png"></a><a href="">техническая поддержка</a>
+                </div>
+                <div class="page-support-content">
+                    <div class="page-support-head">
+                        <h1>Техническая поддержка</h1>
+                    </div>
+                    <div class="about-send-me-message">
+                        <div class="support-dropdown">
+                            <button class="support-dropdown-input">Задать свой вопрос</button>
+                            <button class="expand-sidebar-btn-support"><img src="img/menu(2).png"></button>
+                            <div class="support-dropdown-toggle" onclick="toggleDropdown()">
+                                <span>Часто задаваемые вопросы</span>
+                                <img src="img/ep_arrow-up(12).png" alt="arrow" class="arrow">
+                            </div>
+                            <div class="support-dropdown-menu" id="dropdownMenu">
+                                <a href="#">Регистрация</a>
+                                <a href="#">Регистрация</a>
+                                <a href="#">Регистрация</a>
+                                <a href="#">Регистрация</a>
+                                <a href="#">Регистрация</a>
+                                <a href="#">Регистрация</a>
+                                <a href="#">Регистрация</a>
+                            </div>
+                        </div>
+
+                        <div class="overlay-sidebar-support" id="overlay-sidebar-support">
+                            <div class="support-dropdown-mobile">
+                                <button class="close-overlay-btn-support">✖</button>
+                                <button class="support-dropdown-input-mobile">Задать свой вопрос</button>
+                                <div class="support-dropdown-toggle-mobile" onclick="toggleDropdownMobile()">
+                                    <span>Часто задаваемые вопросы</span>
+                                    <img src="img/ep_arrow-up(12).png" alt="arrow" class="arrow">
+                                </div>
+                                <div class="support-dropdown-menu-mobile" id="dropdownMenuMobile">
+                                    <a href="#">Регистрация</a>
+                                    <a href="#">Регистрация</a>
+                                    <a href="#">Регистрация</a>
+                                    <a href="#">Регистрация</a>
+                                    <a href="#">Регистрация</a>
+                                    <a href="#">Регистрация</a>
+                                    <a href="#">Регистрация</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <form class="about-feedback-form" action="" method="POST" enctype="multipart/form-data">
+
+                            <div class="questions-block-content-support" id="questionsBlock">
+                                <div class="questions-dropdown-support">
+                                    <div class="dropdown-header-support">
+                                        <span>Кто может регистрироваться на платформе</span>
+                                        <img src="img/ep_arrow-up(1).png" alt="arrow">
+                                    </div>
+                                    <div class="dropdown-text-support">
+                                        <span>На платформе «Мой экспорт» могут быть зарегистрированы юридические лица и индивидуальные предприниматели.</span>
+                                    </div>
+                                </div>
+                                <div class="questions-dropdown-support">
+                                    <div class="dropdown-header-support">
+                                        <span>Как получить доступ к платформе</span>
+                                        <img src="img/ep_arrow-up(1).png" alt="arrow">
+                                    </div>
+                                    <div class="dropdown-text-support">
+                                        <span>На платформе «Мой экспорт» могут быть зарегистрированы юридические лица и индивидуальные предприниматели. </span>
+                                    </div>
+                                </div>
+                                <div class="questions-dropdown-support">
+                                    <div class="dropdown-header-support">
+                                        <span>Какие услуги предоставляет платформа</span>
+                                        <img src="img/ep_arrow-up(1).png" alt="arrow">
+                                    </div>
+                                    <div class="dropdown-text-support">
+                                        <span>На платформе «Мой экспорт» могут быть зарегистрированы юридические лица и индивидуальные предприниматели. </span>
+                                    </div>
+                                </div>
+                                <div class="questions-dropdown-support">
+                                    <div class="dropdown-header-support">
+                                        <span>Контактная информация</span>
+                                        <img src="img/ep_arrow-up(1).png" alt="arrow">
+                                    </div>
+                                    <div class="dropdown-text-support">
+                                        <span>На платформе «Мой экспорт» могут быть зарегистрированы юридические лица и индивидуальные предприниматели.</span> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="support-input-block" id="inputBlock">
+                                <div class="about-form-group">
+                                    <label for="fio">ФИО</label>
+                                    <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович" required>
+                                </div>
+                                <div class="about-form-group-numberandmail">
+                                    <div class="about-form-group-number">
+                                        <label for="phone">Номер телефона</label>
+                                        <input type="tel" id="phone-input" name="phone" placeholder="+7 (___) ___-__-__" required>
+                                    </div>
+                                    <div class="about-form-group-mail">
+                                        <label for="email">E-mail</label>
+                                        <input type="email" id="email" name="email" placeholder="ivanov@mail.ru" required>
+                                    </div>
+                                </div>
+                                <div class="about-form-group">
+                                    <label for="fio">ИНН организации</label>
+                                    <input type="text" id="fio" name="fio" placeholder="ХХХХХХХХХХ" required>
+                                </div>
+                                <div class="about-form-group-support">
+                                    <div class="about-form-group-type-obrashen">
+                                        <label for="type-obrasheniya">Тип обращения</label>
+                                        <select name="type-obrasheniya">
+                                            <option>Выберите тип</option>
+                                            <option>Инцидент</option>
+                                            <option>Консультация</option>
+                                        </select>
+                                    </div>
+                                    <div class="about-form-group-biznes-service">
+                                        <label for="biznes-service">Бизнес сервис</label>
+                                        <select name="biznes-service">
+                                            <option>Выберите сервис</option>
+                                            <option>Фитосанитарный сертификат</option>
+                                            <option>Вход/регистрация</option>
+                                            <option>Другое</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="about-form-group">
+                                    <label for="message">Ваше обращение</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <div class="about-form-group">
+                                    <label for="file-upload" class="about-file-upload-label">
+                                        Загрузить файл
+                                        <small>Максимальный размер вложения: 10 МБ</small>
+                                    </label>
+                                    <input type="file" id="file-upload" name="file" accept=".doc,.docx,.pdf,.jpg,.png" max-size="10485760">
+                                </div>
+                                <div class="about-form-group-captcha">
+                                    <div class="about-captcha-input-text">
+                                        <label for="captcha">Введите текст с картинки</label>
+                                        <input type="text" id="captcha" name="captcha" required>
+                                    </div>
+                                    <div class="about-captcha-section">
+                                        <img src="img/Container.png">
+                                    </div>
+                                </div>
+                                <div class="about-form-group-soglashenie">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    <label for="consent">Выражаю свое согласие АНО "Агентство международного сотрудничества" на <a href="#">обработку персональных данных</a>, указанных в форме.</label>
+                                </div>
+                                <button type="submit">Отправить обращение</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main-content">
+            <div class="footer-column footer-logo">
+                <div class="footer-img-logo">
+                    <a href="#"><img src="img/logo-blue.png" alt="Лого"></a>
+                </div>
+                <div class="footer-button-block">
+                    <a href="#" class="footer-button">Оставить обращение</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="#">Услуги экспортерам</a></li>
+                    <li><a href="#">Об агентстве</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">Каталог сервисов</a></li>
+                    <li><a href="#">Мероприятия</a></li>
+                    <li><a href="#">Экспортный акселератор</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contacts">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><img src="img/phone-call.png" alt="Телефон" class="footer-phone-img-desk"><img src="img/phone-call(1).png" alt="Телефон" class="footer-phone-img-mobile"> +7 (900) 000-00-00</li>
+                    <li><img src="img/mail.png" alt="Почта" class="footer-mail-img-desk"><img src="img/mail(1).png" alt="Почта" class="footer-mail-img-mobile"> mail@mail.ru</li>
+                    <li class="footer-whatsapp"><img src="img/ic_baseline-whatsapp.png" alt="WhatsApp"> Whats App</li>
+                    <li class="footer-telegram"><img src="img/ic_baseline-telegram.png" alt="Telegram"> Telegram</li>
+                    <li><img src="img/map-pin.png" alt="Адрес" class="footer-adres-img-desk"><img src="img/map-pin(1).png" alt="Адрес" class="footer-adres-img-mobile"> г. Москва, ул. Безымянная, д.10</li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span>Единый государственный портал экспортеров Челябинской области</span>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="#" id="Politic"><u>Политика конфиденциальности</u></a>
+                    <span><u>© 2024 Все права защищены</u></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/script-dropdown-header.js"></script>
